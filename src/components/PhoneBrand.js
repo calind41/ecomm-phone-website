@@ -152,7 +152,7 @@ const DivWrapper = styled.div`
        }
        .desc {
            position: relative;
-           bottom: 0.8rem;
+           bottom: 0rem;
        }
     }
 `;
