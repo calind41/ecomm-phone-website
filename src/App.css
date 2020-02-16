@@ -4,14 +4,16 @@
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
   --mainYellow:#ffa400;
+  --greenColor:#6effc4;
+  --purpleColor:#9630d8;
 }
 body {
-  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   background: var(--mainWhite) !important;
   color:var(--mainDark) !important;
 }
 .text-title {
-  font-family: 'Permanent Marker', 'cursive';
+  font-family: 'Lato', sans-serif !important;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }

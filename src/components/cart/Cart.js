@@ -12,13 +12,13 @@ export default class Cart extends Component {
             <section>
                 <ProductConsumer>
                     {(value) => {
-                        const { cart } = value;
-                        if (cart.length > 0) {
+                        const cart = JSON.parse(localStorage.getItem('cart'));
+                        if (cart && cart.length > 0) {
                             return (
                                 <Fragment>
                                     <Title name='your ' title='cart' />
                                     <CartColumns />
-                                    <CartList value={value } />
+                                    <CartList value={value } cart={cart} />
                                     <CartTotals value={value} history={this.props.history}/>
                                 </Fragment>
                             );

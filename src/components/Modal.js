@@ -61,5 +61,11 @@ const ModalContainer = styled.div`
     #modal {
         background: var(--mainWhite);
     }
+    #modal img {
+        object-fit: contain;
+        height: 20rem;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 `;

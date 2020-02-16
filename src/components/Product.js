@@ -7,17 +7,25 @@ import PropTypes from 'prop-types';
 
 export default class Product extends Component {
     render() {
-        const { id, title, img, price, inCart } = this.props.product;
+        const { id, title, img, price, inCart, inFavorites } = this.props.product;
         
         return (
-            <ProductWrapper className='col-9 mx-auto col-md-6 col-lg-3 my-3'>
+            <ProductWrapper className='col-9 mx-auto col-sm-8 col-md-7 col-lg-5 col-xl-3 my-3'>
                 <div className='card'>
                     <ProductConsumer>
                         {(value) => (
-                            <div onClick={e => value.handleDetail(id)}className='img-container p-5'>
+                            <div onClick={e => value.handleDetail(id)} className='img-container p-5'>
                                 <Link to='/details'>
                                     <img src={img} alt='product' className='card-img-top' />
                                 </Link>
+                                <button onClick= {() => {
+                                    value.addToFavorites(id);
+                                }}
+                                    className='fav-btn' 
+                                    disabled={ inFavorites ? true : false}
+                                >
+                                   <i className="far fa-bookmark"></i>
+                                </button>
                                 <button onClick={() => {
                                     value.addToCart(id);
                                     value.openModal(id);
@@ -27,6 +35,7 @@ export default class Product extends Component {
                                 >
                                     {inCart ? (<p className='text-capitalize mb-0' disabled>{' '}in Cart</p> ) : (<i className='fas fa-cart-plus'/>)}
                                 </button>
+                                
                             </div>
                         )}
                         
@@ -61,12 +70,13 @@ Product.propTypes = {
 const ProductWrapper = styled.div`
     .card {
         border-color: transparent;
-        transition: all 1s linear;
+        transition: all 110ms linear;
     }
     .card-footer {
+        height: 5rem;
         background: transparent;
         border-top: transparent;
-        transition: all 1s linear;
+        transition: all 210ms linear;
     }
     &:hover {
         .card {
@@ -80,9 +90,14 @@ const ProductWrapper = styled.div`
     .img-container {
         position: relative;
         overflow: hidden;
+        height: 34vh;
     }
     .card-img-top {
-        transition: all 1s linear;
+        display: block;
+        transition: all 410ms linear;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
     }
     .img-container:hover .card-img-top {
         transform: scale(1.2);
@@ -92,21 +107,47 @@ const ProductWrapper = styled.div`
         bottom: 0;
         right: 0;
         padding: 0.2rem 0.4rem;
-        background: var(--lightBlue);
+        background: var(--purpleColor);
         border: none;
         color: var(--mainWhite);
         font-size: 1.4rem;
         border-radius: 0.5rem 0 0 0;
         transform: translate(100%, 100%);
-        transition: all 1s linear;
+        transition: all 210ms linear;
     }
     .img-container:hover .cart-btn {
         transform: translate(0, 0);
     }
 
     .cart-btn:hover {
+        color: var(--greenColor);
+        cursor: pointer;
+    }
+
+    .fav-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.2rem 0.7rem;
+        background: var(--purpleColor);
+        border: none;
+        color: var(--mainWhite);
+        font-size: 1.4rem;
+        border-radius: 0.5rem 0 0 0;
+        transform: translate(100%, 100%);
+        transition: all 210ms linear;
+        z-index: 100000;
+    }
+    .img-container:hover .fav-btn {
+        transform: translate(0, -2.55rem);
+    }
+    .fav-btn:hover {
         color: var(--mainBlue);
         cursor: pointer;
     }
+
+
+
+    
 `;
 
