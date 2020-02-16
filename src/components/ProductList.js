@@ -49,12 +49,12 @@ const ProductListWrapper = styled.div`
     justify-content: space-around;
 
     @media screen and (max-width: 576px ) {
-        border: 2px solid red;
-        .phones .container{
-            // border: 2px solid purple;
-            position: relative;
-            left: 5rem;
-        }
+        // border: 2px solid red;
+        // .phones .container{
+        //     // border: 2px solid purple;
+        //     position: relative;
+        //     left: 5rem;
+        // }
     }
     
 `;
