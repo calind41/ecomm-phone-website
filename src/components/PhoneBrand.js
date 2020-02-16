@@ -8,7 +8,7 @@ export default class PhoneBrand extends Component {
             <DivWrapper>
                 <div className='list'>
                     <ul>
-                        <li><span>Producator</span></li>
+                        <li><span>Brand</span></li>
                         <li className={this.props.selectedBrand === 'Asus' ? 'selected' : ''} onClick={e => this.props.handleClick(e,'Asus')}><i className="fas fa-mobile-alt"></i>Asus</li>
                         <li className={this.props.selectedBrand === 'Huawei' ? 'selected' : ''} onClick={e => this.props.handleClick(e,'Huawei')}><i className="fas fa-mobile-alt"></i>Huawei</li>
                         <li className={this.props.selectedBrand === 'Apple' ? 'selected' : ''} onClick={e => this.props.handleClick(e,'Apple')}><i className="fas fa-mobile-alt"></i>Apple</li>
@@ -41,7 +41,7 @@ const DivWrapper = styled.div`
     
     // border: 2px solid red;
     height: 50vh;
-    width: 10rem;
+    width: 11rem;
     cursor: pointer;
     position: absolute;
     top: 12.7rem;
@@ -89,7 +89,10 @@ const DivWrapper = styled.div`
 
     .sort-btns {
         position: relative;
-        bottom: 3rem;
+        bottom: 2rem;
+        left: 0.6rem;
+        width: 10rem;
+        bottom: 4rem;
         display: flex;
         flex-direction: column;
         // border: 2px solid red;
@@ -104,6 +107,10 @@ const DivWrapper = styled.div`
         height: 2rem;
         background-color: white;
     }
+    .desc {
+        margin-top: -0.4rem;
+    }
+    
     .asc:hover, .desc:hover {
         background-color: #eee;
     }
