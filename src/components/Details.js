@@ -204,7 +204,7 @@ const Caracteristici = styled.div`
     }
     @media screen and (max-width: 576px ) {
         position: absolute;
-        right: 9rem;
+        right: -0.4rem;
         width: 20rem;
         height: 10rem;
         font-size: 1.4rem;
@@ -257,11 +257,12 @@ const Title = styled.div`
     @media screen and (max-width: 576px ) {
         div h1 {
             font-size: 1.4rem;
+            width: 30rem;
+
         }
         div {
             position: relative;
-            right: 0.1rem;
-            border: 2px solid green;
+            right: 0rem;
         }
     }
 `;
@@ -414,16 +415,16 @@ const ProductText = styled.div`
             width: 32rem;
             font-size: 1.4rem;
             position: relative;
-            right: 2rem;
+            right: 0.4rem;
         }
         h4:first-of-type {
             position: relative;
-            right: 2rem;
+            right: 0.4rem;
             font-size: 1.2rem;
         }
         h4:nth-of-type(2) {
             position: relative;
-            right: 2rem;
+            right: 0.4rem;
             font-size: 1rem;
         }
     }
@@ -579,8 +580,8 @@ const InfoTableWrapper = styled.div`
     }
     @media screen and (max-width: 576px ) {
         width: 31rem;
-        right: 2rem;
-        top: 28vh;
+        right: 0rem;
+        top: 27vh;
     }
    
 `;
@@ -659,10 +660,13 @@ const DivWrapper = styled.div`
     }
     @media screen and (max-width: 576px ) {
         top: 10rem;
-        right: 4rem;
+        right: -5rem;
         height: 3rem;
     }
+
+
  
+    
   
     
 `;
