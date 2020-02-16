@@ -4,7 +4,11 @@ import PayPalButton from './PayPalButton';
 import styled from 'styled-components';
 
 export default function CartTotals({ value, history }) {
-    const { cartSubTotal, cartTax, cartTotal, clearCart } = value; 
+    // const { cartSubTotal, cartTax, cartTotal, clearCart } = value; 
+    const { clearCart } = value; 
+    const cartSubTotal = JSON.parse(localStorage.getItem('subTotal'));
+    const cartTax = JSON.parse(localStorage.getItem('tax'));
+    const cartTotal = JSON.parse(localStorage.getItem('total'));
     return (
         <Fragment>
             <TotalsWrapper className='container'>
@@ -46,8 +50,9 @@ export default function CartTotals({ value, history }) {
 }
 
 const ClearCartBtn = styled.button`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         position: relative;
+        left: 3rem;
         left: 5rem;
         bottom: 0.4rem;
     }

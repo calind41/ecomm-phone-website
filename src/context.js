@@ -222,6 +222,9 @@ class ProductProvider extends Component {
                 cartTotal: total
             }
         });
+        localStorage.setItem('subTotal',JSON.stringify(subTotal));
+        localStorage.setItem('tax',JSON.stringify(tax));
+        localStorage.setItem('total',JSON.stringify(total));
 
     }
     sortAscending = () => {
