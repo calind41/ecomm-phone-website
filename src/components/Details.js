@@ -214,19 +214,6 @@ const Caracteristici = styled.div`
             width: 30rem;
         }
     }
-    @media screen and (max-width: 352px ) {
-        position: absolute;
-        right: -0.5rem;
-        width: 20rem;
-        height: 10rem;
-        font-size: 1.7rem;
-        p {
-            position: absolute;
-            bottom: 10rem;
-            width: 30rem;
-        }
-        
-    }
 `;
 const Title = styled.div`
     div {
@@ -275,16 +262,6 @@ const Title = styled.div`
             position: relative;
             right: 0.1rem;
             border: 2px solid green;
-        }
-    }
-    @media screen and (max-width: 352px ) {
-        div h1 {
-            width: 35rem;
-            font-size: 1.48rem;
-        }
-        div {
-            position: relative;
-            right: 3rem;
         }
     }
 `;
@@ -450,30 +427,7 @@ const ProductText = styled.div`
             font-size: 1rem;
         }
     }
-    @media screen and (max-width: 352px ) {
-        height: 9rem;
-        border: 2px solid purple;
-        bottom: 5rem;
-        h2 {
-            font-size: 1.7rem;
-            position: relative;
-            width: 34rem;
-            right: 2rem;
-        }
-        h4:first-of-type {
-            position: relative;
-            width: 34rem;
-            right: 2rem;
-            font-size: 1.3rem;
-        }
-        h4:nth-of-type(2) {
-            position: relative;
-            width: 34rem;
-            right: 2rem;
-            font-size: 1.2rem;
-        }
-    }
-    
+   
 `;
 const ImageWrapper = styled.div`
     height: 59vh;
@@ -543,16 +497,7 @@ const ImageWrapper = styled.div`
             height: 27rem;
         }
     }
-    @media screen and (max-width: 352px ) {
-        left: 6rem;
-        bottom: 5rem;
-        img {
-            display: block;
-            width: 27rem;
-            object-fit: cover;
-            height: 29rem;
-        }
-    }
+ 
 
 `;
 
@@ -637,12 +582,7 @@ const InfoTableWrapper = styled.div`
         right: 2rem;
         top: 28vh;
     }
-    @media screen and (max-width: 352px ) {
-        width: 33rem;
-        right: 2rem;
-        top: 28vh;
-        border: 2px solid purple;
-    }
+   
 `;
 
 const DivWrapper = styled.div`
@@ -720,11 +660,6 @@ const DivWrapper = styled.div`
     @media screen and (max-width: 576px ) {
         top: 10rem;
         right: 4rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 352px) {
-        top: 10rem;
-        right: -7rem;
         height: 3rem;
     }
  
