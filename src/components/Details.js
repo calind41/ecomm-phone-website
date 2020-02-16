@@ -626,6 +626,7 @@ const InfoTableWrapper = styled.div`
         width: 30rem;
         right: 2rem;
         top: 42vh;
+        border: 2px solid yellow;
     }
     @media screen and (max-width: 352px ) {
         width: 33rem;
