@@ -246,8 +246,7 @@ class ProductProvider extends Component {
                 item.classList.remove('selected');
         });
         target.classList.add('selected');
-
-
+        
         let tempProducts = [];
         storeProducts.forEach((item) => {
             const singleItem = {...item};
