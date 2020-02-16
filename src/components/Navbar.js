@@ -63,11 +63,9 @@ const NavWrapper = styled.nav`
     .products {
         display: flex;
     }
-    @media screen and (max-width: 482px) {
-        width: 34rem;
+    @media screen and (max-width: 576px) {
+        width: 36.95rem;
     }
-    @media screen and (max-width: 118px) {
-        width: 30rem;
-    }
+  
 `
 

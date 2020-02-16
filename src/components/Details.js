@@ -203,9 +203,16 @@ const Caracteristici = styled.div`
         font-size: 1.2rem;
     }
     @media screen and (max-width: 576px ) {
-        right: 2rem;
-        top: 5rem;
-        font-size: 1.2rem;
+        position: absolute;
+        right: 9rem;
+        width: 20rem;
+        height: 10rem;
+        font-size: 1.4rem;
+        p {
+            position: absolute;
+            bottom: 11rem;
+            width: 30rem;
+        }
     }
     @media screen and (max-width: 352px ) {
         position: absolute;
@@ -266,7 +273,7 @@ const Title = styled.div`
         }
         div {
             position: relative;
-            right: 1rem;
+            right: 0.1rem;
             border: 2px solid green;
         }
     }
@@ -427,6 +434,7 @@ const ProductText = styled.div`
         height: 9rem;
         bottom: 7rem;
         h2 {
+            width: 32rem;
             font-size: 1.4rem;
             position: relative;
             right: 2rem;
@@ -527,10 +535,12 @@ const ImageWrapper = styled.div`
     }
     @media screen and (max-width: 576px ) {
         left: 5rem;
+        bottom: 6rem;
         img {
             display: block;
             width: 17rem;
-            height: 25rem;
+            object-fit: cover;
+            height: 27rem;
         }
     }
     @media screen and (max-width: 352px ) {
@@ -623,10 +633,9 @@ const InfoTableWrapper = styled.div`
         top: 43vh;
     }
     @media screen and (max-width: 576px ) {
-        width: 30rem;
+        width: 31rem;
         right: 2rem;
-        top: 42vh;
-        border: 2px solid yellow;
+        top: 28vh;
     }
     @media screen and (max-width: 352px ) {
         width: 33rem;
@@ -709,31 +718,10 @@ const DivWrapper = styled.div`
         height: 3rem;
     }
     @media screen and (max-width: 576px ) {
-        top: 9rem;
-        right: 9rem;
+        top: 10rem;
+        right: 4rem;
         height: 3rem;
     }
-    @media screen and (max-width: 575px) {
-        top: 9rem;
-        right: 11rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 555px) {
-        top: 9rem;
-        right: 10rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 535px) {
-        top: 9rem;
-        right: 9rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 507px) {
-        top: 9rem;
-        right: 7rem;
-        height: 3rem;
-    }
- 
     @media screen and (max-width: 352px) {
         top: 10rem;
         right: -7rem;
