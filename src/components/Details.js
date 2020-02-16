@@ -207,12 +207,18 @@ const Caracteristici = styled.div`
         top: 5rem;
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 200px ) {
-        right: -9.5rem;
-        width: 20rem;
+    @media screen and (max-width: 352px ) {
         position: absolute;
-        bottom: 25rem;
+        right: -0.5rem;
+        width: 20rem;
+        height: 10rem;
         font-size: 1.7rem;
+        p {
+            position: absolute;
+            bottom: 10rem;
+            width: 30rem;
+        }
+        
     }
 `;
 const Title = styled.div`
@@ -264,37 +270,14 @@ const Title = styled.div`
             border: 2px solid green;
         }
     }
-    @media screen and (max-width: 350px ) {
+    @media screen and (max-width: 352px ) {
         div h1 {
             width: 35rem;
-            font-size: 1.5rem;
+            font-size: 1.48rem;
         }
         div {
             position: relative;
             right: 3rem;
-            border: 2px solid yellow;
-        }
-    }
-    @media screen and (max-width: 320px ) {
-        div h1 {
-            width: 32rem;
-            font-size: 1.5rem;
-        }
-        div {
-            position: relative;
-            right: 1.8rem;
-            border: 2px solid red;
-        }
-    }
-    @media screen and (max-width: 200px ) {
-        div h1 {
-            width: 35rem;
-            font-size: 1.6rem;
-        }
-        div {
-            position: relative;
-            right: 2rem;
-            border: 2px solid purple;
         }
     }
 `;
@@ -459,10 +442,10 @@ const ProductText = styled.div`
             font-size: 1rem;
         }
     }
-    @media screen and (max-width: 320px ) {
+    @media screen and (max-width: 352px ) {
         height: 9rem;
         border: 2px solid purple;
-        bottom: 7rem;
+        bottom: 5rem;
         h2 {
             font-size: 1.7rem;
             position: relative;
@@ -482,29 +465,7 @@ const ProductText = styled.div`
             font-size: 1.2rem;
         }
     }
-    @media screen and (max-width: 200px ) {
-        height: 9rem;
-        border: 2px solid purple;
-        bottom: 7rem;
-        h2 {
-            font-size: 1.7rem;
-            position: relative;
-            width: 32rem;
-            right: 2rem;
-        }
-        h4:first-of-type {
-            position: relative;
-            width: 32rem;
-            right: 2rem;
-            font-size: 1.3rem;
-        }
-        h4:nth-of-type(2) {
-            position: relative;
-            width: 32rem;
-            right: 2rem;
-            font-size: 1.2rem;
-        }
-    }
+    
 `;
 const ImageWrapper = styled.div`
     height: 59vh;
@@ -572,24 +533,14 @@ const ImageWrapper = styled.div`
             height: 25rem;
         }
     }
-    @media screen and (max-width: 320px ) {
-        left: 7rem;
+    @media screen and (max-width: 352px ) {
+        left: 6rem;
         bottom: 5rem;
         img {
             display: block;
             width: 27rem;
             object-fit: cover;
-            height: 19rem;
-        }
-    }
-    @media screen and (max-width: 200px ) {
-        left: 11rem;
-        bottom: 6rem;
-        img {
-            display: block;
-            width: 27rem;
-            object-fit: cover;
-            height: 17rem;
+            height: 29rem;
         }
     }
 
@@ -676,22 +627,12 @@ const InfoTableWrapper = styled.div`
         right: 2rem;
         top: 42vh;
     }
-    @media screen and (max-width: 350px ) {
-        width: 32rem;
-        right: 2rem;
-        top: 5vh;
-    }
-    @media screen and (max-width: 320px ) {
+    @media screen and (max-width: 352px ) {
         width: 33rem;
         right: 2rem;
-        top: 5vh;
+        top: 28vh;
+        border: 2px solid purple;
     }
-    @media screen and (max-width: 200px ) {
-        width: 30rem;
-        right: 1rem;
-        top: 37vh;
-    }
-
 `;
 
 const DivWrapper = styled.div`
@@ -791,50 +732,13 @@ const DivWrapper = styled.div`
         right: 7rem;
         height: 3rem;
     }
-    @media screen and (max-width: 473px) {
-        top: 9rem;
-        right: 5.5rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 432px) {
-        top: 9.5rem;
-        right: 3.7rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 390px) {
-        top: 9.7rem;
-        right: 1.3rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 358px) {
-        top: 9.7rem;
-        right: -0.4rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 340px) {
-        top: 9.7rem;
-        right: -1.1rem;
-        height: 3rem;
-    }
-    @media (min-width: 333px) and (max-width: 334px) {
-        top: 11rem;
-        right: -1.2rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 332px) {
-        top: 9.5rem;
-        right: -2.6rem;
-        height: 3rem;
-    }
-    @media screen and (max-width: 240px) {
-        top: 11.3rem;
+ 
+    @media screen and (max-width: 352px) {
+        top: 10rem;
         right: -7rem;
         height: 3rem;
     }
-    @media screen and (max-width: 200px) {
-        top: 10rem;
-        right: -9rem;
-        height: 3rem;
-    }
+ 
+  
     
 `;
