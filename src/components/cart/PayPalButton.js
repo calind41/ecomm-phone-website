@@ -48,7 +48,7 @@ export default class PaypalButton extends React.Component {
 }
 
 const PaypalContainer = styled.div`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         position: relative;
         left: 3rem;
     }

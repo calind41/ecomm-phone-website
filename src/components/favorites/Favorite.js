@@ -37,7 +37,7 @@ export default class Favorite extends Component {
 
 const FavoriteWrapper = styled.div`
 
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         width: 37rem;
         
         .titleWrapper {

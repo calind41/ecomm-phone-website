@@ -64,7 +64,7 @@ export default class FavoriteItem extends React.Component {
 
 const ItemWrapper = styled.div`
 
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         img {
             display: inline-block;
             height: 12rem !important;

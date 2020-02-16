@@ -14,7 +14,7 @@ export default function EmptyCart() {
 }
 
 const EmptyCartWrapper = styled.div`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         width: 36rem;
         h1 {
             font-size: 1.6rem;

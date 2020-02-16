@@ -17,7 +17,7 @@ export default function CartList({ value, cart }) {
 }
 
 const CartListWrapper = styled.div`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         width: 36.5rem;
 
     }

@@ -55,7 +55,7 @@ const ClearCartBtn = styled.button`
 
 const TotalsWrapper = styled.div`
     
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         
         .subtotal, .tax, .total {
             position: relative;

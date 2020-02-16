@@ -36,7 +36,7 @@ export default class Cart extends Component {
 
 
 const CartWrapper = styled.div`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         .title-wrapper {
             position: relative;
             left: 10rem;

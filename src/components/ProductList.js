@@ -48,7 +48,7 @@ const ProductListWrapper = styled.div`
     display: flex;
     justify-content: space-around;
 
-    @media screen and (max-width: 388px ) {
+    @media screen and (max-width: 576px ) {
         
        .phones {
            position: relative;

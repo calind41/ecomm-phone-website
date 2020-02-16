@@ -31,7 +31,7 @@ export default function FavoriteTotals({ value, history }) {
 }
 
 const ClearFavBtn = styled.button`
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         position: relative;
         right: 4rem;
     }

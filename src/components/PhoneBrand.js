@@ -125,7 +125,7 @@ const DivWrapper = styled.div`
     .desc i {
         top: 0.05rem;
     }
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         // border: 2px solid red;
         width: 12rem;
         ul li:first-child span {

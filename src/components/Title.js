@@ -17,7 +17,7 @@ const TitleWrapper = styled.div`
     div h1 strong {
         color: var(--purpleColor);
     }
-    @media screen and (max-width: 388px) {
+    @media screen and (max-width: 576px) {
         position: relative;
         // left: 1rem;
         right: 3rem;
