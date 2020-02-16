@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export default function FavoriteTotals({ value, history }) {
     const { clearFavorites } = value; 
@@ -9,7 +10,7 @@ export default function FavoriteTotals({ value, history }) {
                 <div className='row'>
                     <div className='col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right'>
                         <Link to='/'>
-                            <button 
+                            <ClearFavBtn 
                                 onClick={() => {
                                     clearFavorites()
                                     let favorites = JSON.parse(localStorage.getItem('fav'));
@@ -20,7 +21,7 @@ export default function FavoriteTotals({ value, history }) {
                                 className='btn btn-outline-danger text-uppercase mb-3 px-5'
                             >
                                 clear favorites
-                            </button>
+                            </ClearFavBtn>
                         </Link>
                     </div>
                 </div>
@@ -28,3 +29,11 @@ export default function FavoriteTotals({ value, history }) {
         </Fragment>
     )
 }
+
+const ClearFavBtn = styled.button`
+    @media screen and (max-width: 388px) {
+        position: relative;
+        right: 4rem;
+    }
+  
+`;

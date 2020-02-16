@@ -5,6 +5,7 @@ import EmptyFavorite from './EmptyFavorite';
 import { ProductConsumer } from '../../context';
 import FavoriteList from './FavoriteList';
 import FavoriteTotals from './FavoriteTotals';
+import styled from 'styled-components';
 
 export default class Favorite extends Component {
     render() {
@@ -15,12 +16,12 @@ export default class Favorite extends Component {
                         const favorites = JSON.parse(localStorage.getItem('fav'));
                         if (favorites && favorites.length > 0) {
                             return (
-                                <Fragment>
-                                    <Title name='your ' title='cart' />
+                                <FavoriteWrapper>
+                                    <div className='titleWrapper'><Title name='your ' title='Favorites' /></div>
                                     <FavoriteColumn />
                                     <FavoriteList value={value} favorites={favorites} />
                                     <FavoriteTotals value={value} history={this.props.history}/>
-                                </Fragment>
+                                </FavoriteWrapper>
                             );
                         } else {
                             return <EmptyFavorite />
@@ -32,3 +33,20 @@ export default class Favorite extends Component {
         )
     }
 }
+
+
+const FavoriteWrapper = styled.div`
+
+    @media screen and (max-width: 388px) {
+        width: 37rem;
+        
+        .titleWrapper {
+            position: relative;
+            top: 1rem;
+            left: 3rem;
+        }
+    }
+    
+
+   
+`;  

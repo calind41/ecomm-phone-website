@@ -48,13 +48,13 @@ const ProductListWrapper = styled.div`
     display: flex;
     justify-content: space-around;
 
-    @media screen and (max-width: 576px ) {
-        // border: 2px solid red;
-        // .phones .container{
-        //     // border: 2px solid purple;
-        //     position: relative;
-        //     left: 5rem;
-        // }
+    @media screen and (max-width: 388px ) {
+        
+       .phones {
+           position: relative;
+           left: 10rem;
+        //    border: 2px solid red;
+       }
     }
     
 `;

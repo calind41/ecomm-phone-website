@@ -2,6 +2,8 @@ import React from 'react';
 import { ButtonContainer } from '../Button';
 import useForceUpdate from 'use-force-update';
 import { render } from 'react-dom';
+import styled from 'styled-components';
+
 
 export default class FavoriteItem extends React.Component {
 
@@ -24,15 +26,15 @@ export default class FavoriteItem extends React.Component {
         const { removeItemFromFavorites, clearFavorites } = this.props.value;
     
         return (
-            <div className='row my-2 text-capitalize text-center'>
+            <ItemWrapper className='row my-2 text-capitalize text-center'>
                 <div className='col-10 mx-auto col-lg-2'>
                     <img src={img} style={{ width: '5rem', height: '5rem' }} className='img-fluid' alt='product' />
                 </div>
-                <div className='col-10 mx-auto col-lg-2'>
+                <div className='product-text col-10 mx-auto col-lg-2'>
                     <span className='d-lg-none'>product: </span>
                     {title}
                 </div>
-                <div className='col-10 mx-auto col-lg-2'>
+                <div className='price col-10 mx-auto col-lg-2'>
                     <span className='d-lg-none'>price: </span>
                     {price}
                 </div>
@@ -46,15 +48,48 @@ export default class FavoriteItem extends React.Component {
                     className='cart-icon'
                     ><i className='fas fa-trash'></i></div>
                 </div>
-                <div className='col-10 mx-auto col-lg-2'>
+                <div className='add-btn col-10 mx-auto col-lg-2'>
                     <strong><ButtonContainer className='addToCartDiv' onClick={() => {
                         this.props.value.addToCart(id);
                         this.changeText();
                     }} >{this.state.inCart ? 'Added' : 'Add to cart'}</ButtonContainer></strong>
                 </div>
 
-            </div>
+            </ItemWrapper>
             
         )
     }
 }
+
+
+const ItemWrapper = styled.div`
+
+    @media screen and (max-width: 388px) {
+        img {
+            display: inline-block;
+            height: 12rem !important;
+            width: 10rem !important;
+        }
+        .product-text {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+        }
+        .price {
+            font-size: 1.2rem;
+        }
+        i {
+            font-size: 1.6rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .add-btn {
+            position: relative;
+            left: 0.4rem;
+            margin-bottom: 1.4rem;
+        }
+        .add-btn strong button {
+            width: 11rem;
+        }
+    }
+    
+`;

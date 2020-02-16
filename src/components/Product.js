@@ -146,6 +146,12 @@ const ProductWrapper = styled.div`
         cursor: pointer;
     }
 
+    @media screen and (max-width: 388px) {
+        // border: 2px solid blue;
+        position: relative;
+        left: 2rem;
+        width: 25rem;
+    }
 
 
     

@@ -125,4 +125,27 @@ const DivWrapper = styled.div`
     .desc i {
         top: 0.05rem;
     }
+    @media screen and (max-width: 388px) {
+        // border: 2px solid red;
+        width: 12rem;
+        ul li:first-child span {
+            font-weight: bold;
+            font-size: 1.23rem;
+            position: absolute;
+            top: 0.8rem;
+        }
+       .sort-btns {
+            position: relative;
+            left: 0.75rem;
+            bottom: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            height: 4.5rem;  
+            width: 11rem;      
+       }
+       .desc {
+           position: relative;
+           bottom: 0.8rem;
+       }
+    }
 `;
