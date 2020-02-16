@@ -45,7 +45,6 @@ export default function CartItem({ item, value }) {
 
 const ItemWrapper = styled.div`
     @media screen and (max-width: 576px) {
-        border: 2px solid purple;
         img  {
             display: inline-block;
             height: 12rem !important;
