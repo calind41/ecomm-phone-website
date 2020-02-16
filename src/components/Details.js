@@ -207,6 +207,13 @@ const Caracteristici = styled.div`
         top: 5rem;
         font-size: 1.2rem;
     }
+    @media screen and (max-width: 200px ) {
+        right: -9.5rem;
+        width: 20rem;
+        position: absolute;
+        bottom: 25rem;
+        font-size: 1.7rem;
+    }
 `;
 const Title = styled.div`
     div {
@@ -254,6 +261,40 @@ const Title = styled.div`
         div {
             position: relative;
             right: 1rem;
+            border: 2px solid green;
+        }
+    }
+    @media screen and (max-width: 350px ) {
+        div h1 {
+            width: 35rem;
+            font-size: 1.5rem;
+        }
+        div {
+            position: relative;
+            right: 3rem;
+            border: 2px solid yellow;
+        }
+    }
+    @media screen and (max-width: 320px ) {
+        div h1 {
+            width: 32rem;
+            font-size: 1.5rem;
+        }
+        div {
+            position: relative;
+            right: 1.8rem;
+            border: 2px solid red;
+        }
+    }
+    @media screen and (max-width: 200px ) {
+        div h1 {
+            width: 35rem;
+            font-size: 1.6rem;
+        }
+        div {
+            position: relative;
+            right: 2rem;
+            border: 2px solid purple;
         }
     }
 `;
@@ -418,6 +459,52 @@ const ProductText = styled.div`
             font-size: 1rem;
         }
     }
+    @media screen and (max-width: 320px ) {
+        height: 9rem;
+        border: 2px solid purple;
+        bottom: 7rem;
+        h2 {
+            font-size: 1.7rem;
+            position: relative;
+            width: 34rem;
+            right: 2rem;
+        }
+        h4:first-of-type {
+            position: relative;
+            width: 34rem;
+            right: 2rem;
+            font-size: 1.3rem;
+        }
+        h4:nth-of-type(2) {
+            position: relative;
+            width: 34rem;
+            right: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and (max-width: 200px ) {
+        height: 9rem;
+        border: 2px solid purple;
+        bottom: 7rem;
+        h2 {
+            font-size: 1.7rem;
+            position: relative;
+            width: 32rem;
+            right: 2rem;
+        }
+        h4:first-of-type {
+            position: relative;
+            width: 32rem;
+            right: 2rem;
+            font-size: 1.3rem;
+        }
+        h4:nth-of-type(2) {
+            position: relative;
+            width: 32rem;
+            right: 2rem;
+            font-size: 1.2rem;
+        }
+    }
 `;
 const ImageWrapper = styled.div`
     height: 59vh;
@@ -485,6 +572,27 @@ const ImageWrapper = styled.div`
             height: 25rem;
         }
     }
+    @media screen and (max-width: 320px ) {
+        left: 7rem;
+        bottom: 5rem;
+        img {
+            display: block;
+            width: 27rem;
+            object-fit: cover;
+            height: 19rem;
+        }
+    }
+    @media screen and (max-width: 200px ) {
+        left: 11rem;
+        bottom: 6rem;
+        img {
+            display: block;
+            width: 27rem;
+            object-fit: cover;
+            height: 17rem;
+        }
+    }
+
 `;
 
 const InfoTableWrapper = styled.div`
@@ -567,6 +675,21 @@ const InfoTableWrapper = styled.div`
         width: 30rem;
         right: 2rem;
         top: 42vh;
+    }
+    @media screen and (max-width: 350px ) {
+        width: 32rem;
+        right: 2rem;
+        top: 5vh;
+    }
+    @media screen and (max-width: 320px ) {
+        width: 33rem;
+        right: 2rem;
+        top: 5vh;
+    }
+    @media screen and (max-width: 200px ) {
+        width: 30rem;
+        right: 1rem;
+        top: 37vh;
     }
 
 `;
@@ -699,13 +822,18 @@ const DivWrapper = styled.div`
         height: 3rem;
     }
     @media screen and (max-width: 332px) {
-        top: 11rem;
-        right: -1.6rem;
+        top: 9.5rem;
+        right: -2.6rem;
         height: 3rem;
     }
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 240px) {
         top: 11.3rem;
-        right: -3.4rem;
+        right: -7rem;
+        height: 3rem;
+    }
+    @media screen and (max-width: 200px) {
+        top: 10rem;
+        right: -9rem;
         height: 3rem;
     }
     
